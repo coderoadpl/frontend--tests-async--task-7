@@ -1,0 +1,34 @@
+{
+    "results": [
+        {
+            "name": {
+                "title": "Mr",
+                "first": "Kurt",
+                "last": "Späth"
+            },
+            "email": "kurt.spath@example.com"
+        },
+        {
+            "name": {
+                "title": "Mr",
+                "first": "Tomas",
+                "last": "Crespo"
+            },
+            "email": "tomas.crespo@example.com"
+        },
+        {
+            "name": {
+                "title": "Ms",
+                "first": "Bella",
+                "last": "Williams"
+            },
+            "email": "bella.williams@example.com"
+        }
+    ],
+    "info": {
+        "seed": "5cd06924fd11288c",
+        "results": 3,
+        "page": 1,
+        "version": "1.3"
+    }
+}
