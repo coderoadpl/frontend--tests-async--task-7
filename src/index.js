@@ -1,4 +1,4 @@
-const fetchUsers = () => {
+export const fetchUsers = () => {
     return fetch('https://randomuser.me/api?results=3&inc=email,name')
         .then((response) => {
             return response.json()
@@ -14,6 +14,8 @@ const fetchUsers = () => {
         })
 }
 
-fetchUsers().then((data) => {
-    console.log(data)
-})
+if (process.env.NODE_ENV !== 'test') {
+    fetchUsers().then((data) => {
+        console.log(data)
+    })
+}
