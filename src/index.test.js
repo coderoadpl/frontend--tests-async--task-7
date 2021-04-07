@@ -8,10 +8,12 @@ const mockFetch = () => {
     })
 }
 
+window.fetch = mockFetch
+
 it('fetches the users', async () => {
     expect.assertions(2)
 
-    const result = await fetchUsers(mockFetch)
+    const result = await fetchUsers()
 
     expect(result.length).toBe(3)
     expect(result).toStrictEqual([
